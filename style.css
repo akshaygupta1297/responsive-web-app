@@ -1,0 +1,262 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*                           NAVIGATION BAR                    */
+
+.navbar{
+    display: flex;
+    background-color: teal;
+    justify-content: space-between;
+    position: sticky;
+    top: 0.001px;
+    width: 95rem;
+}
+/* logo & name */
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    width: 140px;
+}
+/* list items */
+.navbar ul{
+    display: flex;
+    padding: 2px 5px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar li a{
+    padding: 2px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.navbar li a:hover{
+    background-color: black;
+}
+/* right buttons */
+.right{
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    justify-content: space-between;
+}
+.right button{
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+    margin-right: 5px;
+    background-color: green;
+    border-radius: 5px;
+    border: 5px green;
+}
+.right button:hover{
+    background-color: rgb(0, 14, 0);
+    cursor: pointer;
+}
+.right input{
+    font-size: 1rem;
+}
+
+/*                    HOME PAGE                 */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 95rem;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/back\ gr.jpg') no-repeat center center/cover;
+    /* opacity: 0.9; */
+}
+.home h1{
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+}
+.home button{
+    background-color: blue;
+    height: 4rem;
+    width: 11rem;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    border-radius: 10px;
+}
+.home button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+/*                    SALE ITEMS              */
+.items{
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+    width: 95rem;
+    align-items: center;
+}
+.soft-toy{
+    background: url(./img/soft\ toy\ 2.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36rem;
+    height: 25rem;
+    color: blue;
+    transition: all;
+    font-family: 'Itim', cursive;
+}
+.soft-toy:hover{
+    width: 37rem;
+    height: 27rem;
+}
+.btn{
+    background-color: blue;
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+}
+.wood-toy{
+    background: url(./img/woodn\ toy.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33rem;
+    height: 25rem;
+    color: black;
+    font-family: 'Itim', cursive;
+}
+.wood-toy:hover{
+    width: 35rem;
+    height: 27rem;
+}
+.train{
+    background: url(./img/trains.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 25rem;
+    font-family: 'Itim', cursive;
+}
+.train:hover{
+    width: 29rem;
+    height: 27rem;
+}
+/*       next       */
+.plastic-toy{
+    background: url(./img/plastic\ toys.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 23.4rem;
+    height: 25rem;
+    color: blue;
+}
+.plastic-toy:hover{
+    width: 25rem;
+    height: 27rem;
+}
+.free-shipping{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 25rem;
+}
+.toys-for-car{
+    background: url(./img/cars\ toys.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 23.4rem;
+    height: 25rem;
+}
+.toys-for-car:hover{
+    width: 25rem;
+    height: 27rem;
+}
+.arts{
+    background: url(./img/markus-spiske.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 23.4rem;
+    height: 25rem;
+    color: black;
+}
+.arts:hover{
+    width: 25rem;
+    height: 27rem;
+}
+.replace{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 25rem;
+}
+
+/*      categories & Products      */
+.cat-product{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 32rem;
+    width: 95rem;
+    align-items: center;
+    background-color: cadetblue;
+}
+/* side list  */
+.categ{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    height: 1.4rem;
+    width: 50rem;
+}
+.btncat{
+    background-color: maroon;
+    cursor: pointer;
+}
+/* to shows prod with pic  */
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75rem;
+}
+.product button{
+    background-color: crimson;
+    cursor: pointer;
+}
+.pro1 img{
+    width: 12rem;
+    height: 12rem;
+}
+.pro2 img{
+    width: 12rem;
+    height: 12rem;
+}
+.pro3 img{
+    width: 12rem;
+    height: 12rem;
+}
